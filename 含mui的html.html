@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="mui-slider">
+			<div class="mui-slider-group">
+				<div class="mui-slider-item">
+					<a href="#"><img src="img/room1.jpg" /></a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#"><img src="img/room2.jpg" /></a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#"><img src="img/room3.jpg" /></a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#"><img src="img/room4.png" /></a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	//获得slider插件对象
+	var gallery = mui('.mui-slider');
+	gallery.slider({
+		interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+	});
+</script>
